@@ -32,7 +32,11 @@ module.exports = merge(common, {
             loader: 'css-loader',
             options: { sourceMap: true, importLoaders: 1, modules: false },
           },
-          { loader: 'postcss-loader', options: { sourceMap: true } },
+          { 
+            loader: 'postcss-loader', 
+            // postcssOptions is needed for postcss 8.x; skip if you're using postcss 7.x
+            options: { sourceMap: true, }
+          },
           { loader: 'sass-loader', options: { sourceMap: true } },
         ],
       },

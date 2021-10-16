@@ -1,6 +1,10 @@
 // Test import of a JavaScript module
 import { example } from '@/js/example'
 
+// Import the boostrap plugins you need. For example...
+import { Tooltip, Toast, Popover } from 'bootstrap'
+
+
 // Test import of an asset
 import webpackLogo from '@/images/webpack-logo.svg'
 
