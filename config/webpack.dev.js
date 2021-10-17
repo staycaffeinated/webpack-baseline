@@ -35,7 +35,12 @@ module.exports = merge(common, {
           { 
             loader: 'postcss-loader', 
             // postcssOptions is needed for postcss 8.x; skip if you're using postcss 7.x
-            options: { sourceMap: true, }
+            options: { 
+              sourceMap: true, 
+              postcssOptions: {
+                plugins: ["autoprefixer"]
+              }
+            },
           },
           { loader: 'sass-loader', options: { sourceMap: true } },
         ],
