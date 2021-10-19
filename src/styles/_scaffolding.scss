@@ -9,7 +9,6 @@ html {
 body {
   margin: auto;
   text-align: center;
-  /* max-width: $page-width; */
 }
 
 h1 {
@@ -22,4 +21,8 @@ h1 {
   width: 100px;
   background-image: url('~assets/example.png');
   background-size: cover;
+}
+
+.main-wrapper {
+  /* height: 100vh; */
 }
